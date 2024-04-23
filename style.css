@@ -222,3 +222,53 @@
       margin-top: 1rem;
     }
   }
+  .company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideFromLeft 1s ease forwards ;
+  }
+  .company-grid{
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    padding: 1rem;
+    background-color: rgb(218, 213, 206);
+    border: none;
+    border-radius: 0.625rem;
+    margin-top: 1.5rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2rem;
+  }
+  .company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3c4047;
+    display: flex;
+    gap: 0.5rem;
+
+  }
+  .svg-img{
+    height: 1.56rem;
+    padding-top: 0.3955rem;
+  }
+  .logo-txt{
+    margin-top: 9.5px;
+    /* padding-top: 0%; */
+  }
+  @media screen and (min-width:760px) {
+    .company-grid{
+      grid-template-columns: repeat(4,1fr);
+      margin-top: 0.75rem;
+      gap: 1rem;
+     
+
+    }
+    .company-title{
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+    
+  }
