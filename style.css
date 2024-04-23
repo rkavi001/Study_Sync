@@ -108,3 +108,117 @@
     width: 1.5rem;
     padding: 0%;
   }
+  .main-session{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    align-items: center;
+    margin:0 auto
+  }
+  .content-left{
+    text-align: center;
+    animation: slideFromLeft 1s ease forwards;
+  }
+  @keyframes slideFromLeft{
+    0%{
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+  .session-label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(69, 69, 139);
+  }
+  .session-title{
+    font-size: 2.3rem;
+    padding: 1rem;
+  }
+  .section-description{
+    color: rgb(68, 61, 61);
+    font-size:1.15rem ;
+  }
+  .button-group{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .start-button, 
+  .tour-button{
+    margin-top: 2rem;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius:0.325rem ;
+    background-color: rgb(89, 89, 182);
+    /* padding topbottom leftright */
+     padding: 0.75rem 1.5rem;
+  } 
+  .tour-button{
+    background-color: rgb(89, 78, 78);
+  }
+  .start-button:hover{
+    background-color: rgb(63, 63, 137);
+  }
+  .tour-button:hover{
+    background-color: rgb(106, 99, 99);
+  }
+  .content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .image-container{
+    border: none;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    box-shadow:0px 4px 8px rgba(0, 0,0, 0.1) ;
+    height: 47vh;
+  }
+  .section-image{
+    height: 99%;
+    width: 99%;
+  }
+
+  @media screen and (min-width:760px) {
+    .main-session{
+      flex-direction: row;
+      padding: 5rem;
+    }
+    .content-left{
+      max-width:50%;
+      text-align: left;
+    }
+    .session-title{
+      padding: 0rem;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    .image-container{
+      height: 50vh;
+    }
+    .button-group{
+      justify-content: start;
+      padding: 0%;
+    }
+    .content-right{
+      min-width: 285px;
+    }
+    .section-description{
+      font-size: 1.1rem;
+      width: 78%;
+      margin-top: 1rem;
+    }
+  }
